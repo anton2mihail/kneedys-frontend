@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kneedy's Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+	<link rel="stylesheet" href="/styles/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="/styles/animate.css">
+
+	<link rel="stylesheet" href="/styles/owl.carousel.min.css">
+	<link rel="stylesheet" href="/styles/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/styles/magnific-popup.css">
+
+	<link rel="stylesheet" href="/styles/aos.css">
+
+	<link rel="stylesheet" href="/styles/ionicons.min.css">
+
+	<link rel="stylesheet" href="/styles/flaticon.css">
+	<link rel="stylesheet" href="/styles/icomoon.css">
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+	<% include partials/_header %>
+	<!-- END nav -->
+	<script>
+		window.cart = <%= cart %>;
+	</script>
+
+	<section class="home-slider owl-carousel">
+
+		<div class="slider-item" style="background-image: url('https://res.cloudinary.com/kneedys/image/upload/v1542391900/gg/bg_3.jpg');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center">
+
+					<div class="col-md-7 col-sm-12 text-center ftco-animate">
+						<h1 class="mb-3 mt-5 bread">Cart</h1>
+						<p class="breadcrumbs"><span class="mr-2"><a href="/">Home</a></span> <span>Cart</span></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-cart">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ftco-animate">
+					<div class="cart-list">
+						<table class="table">
+							<thead class="thead-primary">
+								<tr class="text-center">
+									<th><button class="btn btn-white py-3 px-4 clear-cart">Clear Cart</button></th>
+									<th>&nbsp;</th>
+									<th>Product</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<!-- elements will get rendered from cart-update.js -->
+							<tbody class='root'>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-end">
+				<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+					<div class="cart-total mb-3">
+						<h3>Cart Totals</h3>
+						<p class="d-flex">
+							<span>Subtotal</span>
+							<span class="subtotal">$0.00</span>
+						</p>
+						<p class="d-flex">
+							<span>Tax</span>
+							<span class="tax">$0.00</span>
+						</p>
+						<hr>
+						<p class="d-flex total-price">
+							<span>Total</span>
+							<span class="total">$0.00</span>
+						</p>
+					</div>
+					<p class="text-center"><a href="/checkout" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<% include partials/_footer %>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+	<script src="/scripts/jquery.min.js"></script>
+	<script src="/scripts/jquery-migrate-3.0.1.min.js"></script>
+	<script src="/scripts/popper.min.js"></script>
+	<script src="/scripts/bootstrap.min.js"></script>
+	<script src="/scripts/jquery.easing.1.3.js"></script>
+	<script src="/scripts/jquery.waypoints.min.js"></script>
+	<script src="/scripts/jquery.stellar.min.js"></script>
+	<script src="/scripts/owl.carousel.min.js"></script>
+	<script src="/scripts/jquery.magnific-popup.min.js"></script>
+	<script src="/scripts/aos.js"></script>
+	<script src="/scripts/jquery.animateNumber.min.js"></script>
+	<script src="/scripts/bootstrap-datepicker.js"></script>
+	<script src="/scripts/jquery.timepicker.min.js"></script>
+	<script src="/scripts/scrollax.min.js"></script>
+	<script src="/scripts/main.js"></script>
+	<script src="/scripts/cart-update.js"></script>
+
+
+</body>
+
+</html>
